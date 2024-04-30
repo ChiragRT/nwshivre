@@ -29,9 +29,9 @@ bot = Client(
     bot_token=bot_token)
 
 
-@bot.on_message(filters.command(["baby"]))
+@bot.on_message(filters.command(["txt1"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("**ℍɪɪ ɧąƈƙɛཞ.😎 \n\n  𝔾ɪᴠᴇ /hacker ℂᴏᴍᴍᴀɴᴅ ᴛᴏ 𝔻ᴏᴡɴʟᴀᴏᴅ 𝔽ʀᴏᴍ ᴀ 𝕋ᴇ𝕩ᴛ ғɪʟᴇ.⚡️\n**")
+    editable = await m.reply_text("**ℍɪɪ ɧąƈƙɛཞ.😎 \n\n  𝔾ɪᴠᴇ /txt1 ℂᴏᴍᴍᴀɴᴅ ᴛᴏ 𝔻ᴏᴡɴʟᴀᴏᴅ 𝔽ʀᴏᴍ ᴀ 𝕋ᴇ𝕩ᴛ ғɪʟᴇ.⚡️\n**")
 
 
 @bot.on_message(filters.command("rukja"))
@@ -41,7 +41,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["hacker"]))
+@bot.on_message(filters.command(["txt1"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('**ℍɪɪ ɧąƈƙɛཞ.😎 \n\n 𝕋𝕆 ᴅᴏᴡɴʟᴏᴀᴅ ᴀ ᴛxᴛ ғɪʟᴇ 𝕤ᴇɴᴅ ʜᴇʀᴇ ⚡️**')
     input: Message = await bot.listen(editable.chat.id)
